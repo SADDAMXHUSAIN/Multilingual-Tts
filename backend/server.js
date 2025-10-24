@@ -8,6 +8,8 @@ require("dotenv").config()
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+console.log("process.env.CORS_ORIGIN", process.env.CORS_ORIGIN);
+
 // middlewares
 app.use(cors({
   origin: process.env.CORS_ORIGIN
