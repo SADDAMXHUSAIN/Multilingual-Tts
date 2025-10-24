@@ -32,7 +32,7 @@ function App() {
     setAudioSegments([]);
 
     try {
-      const response = await fetch("/api/tts", {
+      const response = await fetch("https://multilingual-tts-production-5b99.up.railway.app/api/tts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
